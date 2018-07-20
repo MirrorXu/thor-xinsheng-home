@@ -7,7 +7,7 @@
                         <div class="links">
                             <span class="link" v-for="(v,i) in  links" @click="linkTo(v.link)"> {{v.text}} </span>
                         </div>
-                        <div class="address">北京市经济技术开发区科创六街88号A1-2层</div>
+                        <div class="address"><img class="addressIcon" src="../../source/index/addressIcon.png">北京市经济技术开发区科创六街88号A1-2层</div>
                     </div>
                     <div class="footer-top-left-bottom">
                         客户服务热线：400 - 808 -8978
@@ -18,7 +18,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                索真北京医学检验所有限公司
+                <a href="http://www.thorgene.com">索真北京医学检验所有限公司</a>
+                <a href="http://www.thorgene.com">索真（北京）医学科技有限公司</a>
+                <span> COPYRIGHT © 2017,索真,ALL RIGHTS RESERVED.</span>
             </div>
         </div>
     </div>
@@ -60,8 +62,6 @@
 
 <style lang="less">
     @import "../../less/var";
-
-
     @codeimgH:96px;
     .footer {
         background: @blue;
@@ -105,10 +105,15 @@
                             }
                         }
                         .address{
-
+                            padding-left: 30px;
                             align-self: flex-end;
 
                             font-size: 14px;
+                            .addressIcon{
+                                position: relative;
+                                vertical-align: bottom;
+                                margin-right: 5px;
+                            }
                         }
                     }
                     &-bottom{
@@ -129,6 +134,15 @@
                         width: @codeimgH;
                         height: @codeimgH;
                     }
+                }
+            }
+            .footer-bottom{
+                font-size: 14px;
+                padding: 3px 0;
+                text-align: center;
+                a{
+                    color: @white;
+                    text-decoration: none ;
                 }
             }
         }
