@@ -93,8 +93,6 @@
             </div>
         </div>
 
-
-
         <div class="sec-research">
             <div class="banxin">
                 <h2 class="title2">产品研发历程</h2>
@@ -106,6 +104,16 @@
                             <p>{{v.info}}</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec-partners">
+            <h2 class="title2">合作伙伴</h2>
+            <div class="out">
+                <div class="con">
+                    <img  src="http://www.vlifebank.com/8a83af79ec2695106a6ea18b1e5e1219.png"><!--
+        --><img  src="http://www.vlifebank.com/8a83af79ec2695106a6ea18b1e5e1219.png">
                 </div>
             </div>
         </div>
@@ -201,12 +209,6 @@
     }
 
 
-    .title2() {
-        color: @black;
-        font-weight: normal;
-        text-align: center;
-        font-size: 36px;
-    }
 
     #app {
 
@@ -230,6 +232,7 @@
         }
         .sec-cancer {
             background: #ffffff;
+            padding-bottom:50px ;
             .banxin {
                 padding-top: 60px;
                 .banxin();
@@ -377,13 +380,13 @@
                 }
             }
             &:not(:first-child){
-                padding-bottom: 30px;
+                padding-bottom: 60px;
             }
         }
 
-        .sec-research {
+        .sec-research{
             /*border: 1px solid orangered;*/
-            padding: 50px 0;
+            padding: 50px 0 100px 0;
             .banxin {
                 .banxin();
                 .title2 {
@@ -441,6 +444,48 @@
             }
         }
 
+
+
+        .sec-partners {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #f9f9f9;
+            .title2{
+                .title2();
+            }
+            .out {
+                width: 100%;
+                padding: 10px 0 30px 0;
+                margin: 0 auto;
+                overflow: hidden;
+                text-align: center;
+                .con {
+                    width: 10580px;
+                    height: 150px;
+                    animation: move 60s linear infinite normal;
+                    animation-fill-mode: forwards;
+                    overflow: hidden;
+                    transform-origin: left top;
+                    img {
+                        display: inline-block;
+                    }
+                    .con:hover {
+                        animation-play-state: paused;
+                        -webkit-animation-play-state: paused;
+                    }
+                    @keyframes move {
+                        0% {
+                            transform: translateX(0px);
+                        }
+                        100% {
+                            transform: translateX(-5290px);
+                        }
+                    }
+                }
+
+            }
+
+        }
 
 
 
