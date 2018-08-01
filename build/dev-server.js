@@ -1,4 +1,4 @@
-require('./check-versions')()
+require('./check-versions')()   // node&npm版本检测
 
 var config = require('../config')
 if (!process.env.NODE_ENV) {
